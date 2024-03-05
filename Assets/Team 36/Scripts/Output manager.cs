@@ -29,6 +29,10 @@ namespace Team36
         // Update is called once per frame
         void Update()
         {
+            
+        }
+        void ComboInitiator()
+        {
             int randomInput = Random.Range(0, inputs.Length);
             string output = inputs[randomInput];
             Debug.Log(output);
