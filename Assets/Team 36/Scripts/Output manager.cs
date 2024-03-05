@@ -6,16 +6,17 @@ namespace Team36
 {
     public class Outputmanager : MicrogameInputEvents
     {
-        private Vector2 playerInputDirection;
-
-        private Vector2[] possibleDirections = {
-            new Vector2(0, 1),
-            new Vector2(1, 0),
-            new Vector2(0, -1),
-            new Vector2(-1, 0),
-            
-         };
-
+        string[] inputs = { 
+            "Up",
+            "Down",
+            "Left",
+            "Right",
+            "Button1",
+            "Button2" 
+        };
+        
+    
+    
 
 
         private Vector2 playerOutputDirection;
@@ -28,7 +29,10 @@ namespace Team36
         // Update is called once per frame
         void Update()
         {
-
+            int randomInput = Random.Range(0, inputs.Length);
+            string output = inputs[randomInput];
+            Debug.Log(output);
+            Debug.Log(output);
         }
     }
 }
