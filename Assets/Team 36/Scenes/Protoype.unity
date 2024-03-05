@@ -527,6 +527,8 @@ MonoBehaviour:
   getInputFrom: 2
   direction: {x: 0, y: 0}
   lastInput: {x: 0, y: 0}
+  currentInput: 
+  inputs: {fileID: 1576783765}
 --- !u!114 &618193836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1602,6 +1604,8 @@ MonoBehaviour:
   getInputFrom: 1
   direction: {x: 0, y: 0}
   lastInput: {x: 0, y: 0}
+  currentInput: 
+  inputs: {fileID: 1576783765}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
