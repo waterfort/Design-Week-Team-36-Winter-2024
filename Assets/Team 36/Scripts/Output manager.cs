@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEditor.Rendering.CameraUI;
 
 namespace Team36
 {
@@ -16,6 +17,8 @@ namespace Team36
             "Button2" 
         };
 
+        public string[] comboReq;
+
         int lastInput;
         public int combolength = 4;
     
@@ -26,7 +29,7 @@ namespace Team36
         // Start is called before the first frame update
         void Start()
         {
-                ComboInitiator();
+           ComboInitiator();
             
         }
 
@@ -37,6 +40,7 @@ namespace Team36
         }
         void ComboInitiator()
         {
+            comboReq = new string[combolength];
             for (int i = 0; i < combolength; i++)
             {
                 int randomInput = Random.Range(0, inputs.Length);
@@ -44,16 +48,17 @@ namespace Team36
 
                 if (randomInput != lastInput)
                 {
-                    Debug.Log(output);
+                    comboReq[i] = output;
                 }
                 else if(randomInput == lastInput)
                 {
-                    Debug.Log("same input retrying");
-                    i-- ;
                     
+                    i-- ;
                 }
                 lastInput = randomInput;
+                print(i + "   " + output);
             }
+            //Debug.Log(comboReq);
         }   
     }
 }
