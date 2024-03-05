@@ -16,7 +16,7 @@ MonoBehaviour:
   teamNumber: 0
   gameTitle: prototype
   gameIcon: {fileID: 0}
-  prompt: 
+  prompt: Fight
   singlePlayerScene: {fileID: 102900000, guid: faf41e02b60935543b989f8e0395f4a8, type: 3}
   twoPlayerScene: {fileID: 0}
   controls: []
