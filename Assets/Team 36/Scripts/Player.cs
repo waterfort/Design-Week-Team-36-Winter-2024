@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 namespace team36
@@ -71,6 +72,10 @@ namespace team36
             Debug.Log("Stop action 2");
 
         }
+        public void clearInput()
+        {
+            //call this in between combos/rounds
+            lastInput = Vector2.zero;
+        }
     }
-
 }
