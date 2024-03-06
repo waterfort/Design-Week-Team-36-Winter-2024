@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using team36;
 using Unity.VisualScripting;
+using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 namespace Team36
 {
@@ -13,6 +14,8 @@ namespace Team36
         public int inputRef = 0;
         public string display;
         public int spriteLocation;
+
+        
 
         //6 is for success, 14 for fail
         public int buttonstate = 0;
@@ -34,7 +37,20 @@ namespace Team36
             {
                 buttonstate = 6;
             }
-            if (player.inputplace <= inputRef)
+            if (player.failed == true)
+            {
+                buttonstate = 12;
+                //Debug.Log("before");
+
+                waitTimer(2);
+
+               
+                Debug.Log("After");
+                player.failed = false;
+                buttonstate = 0;
+                    
+            }
+            if (player.inputplace <= inputRef && player.failed == false)
             {
                 buttonstate = 0;
             }
@@ -74,6 +90,16 @@ namespace Team36
 
 
             spriteRenderer.sprite = sprites[spriteLocation];
+
+        }
+        void waitTimer(float waitTime)
+        {
+            waitTime -= waitTime * Time.deltaTime;
+
+            if(waitTime < 0)
+            {
+                return;
+            }
         }
     }
 }

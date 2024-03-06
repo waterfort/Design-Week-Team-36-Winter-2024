@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using Team36;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -15,6 +16,8 @@ namespace team36
         public string currentInput;
 
         public int inputplace = 0;
+
+        public bool failed = false;
        
 
         public Outputmanager outputManager;
@@ -111,6 +114,8 @@ namespace team36
                 Debug.Log("bad");
                 currentInput = "None"; 
                 inputplace = 0;
+                failed = true;
+                
 
             }
             if (inputplace == 4)
