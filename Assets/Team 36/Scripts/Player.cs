@@ -102,14 +102,14 @@ namespace team36
         public void checkInput()
         {
            
-            if (currentInput == outputManager.comboReq[inputplace])
+            if (currentInput == outputManager.comboReq[inputplace] && failed == false)
             {
                 Debug.Log("good");
                 currentInput = "None";
                 inputplace ++;
                    
             }
-            else if (currentInput != outputManager.comboReq[inputplace])
+            else if (currentInput != outputManager.comboReq[inputplace] && failed == false)
             {
                 Debug.Log("bad");
                 currentInput = "None"; 
