@@ -1,5 +1,7 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using team36;
 using Unity.VisualScripting;
 using UnityEngine;
 using static UnityEditor.Rendering.CameraUI;
@@ -21,16 +23,18 @@ namespace Team36
 
         int lastInput;
         public int combolength = 4;
-    
-    
 
+        public Player player1;
+        public Player player2;
+
+        public bool isRoundOver = false;
 
         private Vector2 playerOutputDirection;
         // Start is called before the first frame update
         void Start()
         {
             ComboInitiator();
-            
+            isRoundOver = false;
         }
 
         // Update is called once per frame
@@ -59,6 +63,42 @@ namespace Team36
                //print(i + "   " + output);
             }
             //Debug.Log(comboReq);
-        }   
+        }
+        public void PlayerWins(team36.Player winner)
+        {
+            print(winner.name);
+            if (winner.name == "Player 1 Controller")
+            {
+                player2.health--;
+                roundreset();
+                ComboInitiator();
+            }
+            if (winner.name == "Player 2 Controller")
+            {
+                player1.health--;
+                roundreset();
+                ComboInitiator();
+            }
+        }
+        public void gameEnd()
+        {
+            if (player1.health <= 0)
+            {
+                //p2 wins
+            }
+            if (player2.health <= 0)
+            {
+                //p1 wins
+            }
+        }
+        public void roundreset()
+        {
+            isRoundOver = true;
+            player2.inputplace = 0;
+            player1.inputplace = 0;
+
+            isRoundOver = false;
+            
+        }
     }
 }

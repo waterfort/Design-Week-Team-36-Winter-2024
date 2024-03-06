@@ -18,6 +18,10 @@ namespace team36
         public int inputplace = 0;
 
         public bool failed = false;
+
+        public float health;
+
+        //private float waitTime;
        
 
         public Outputmanager outputManager;
@@ -27,6 +31,9 @@ namespace team36
             direction = Vector2.zero;
             //outputManager.ComboInitiator();
 
+            health = 2;
+
+            //waitTime = 1;
         }
         private void Update()
         {
@@ -121,8 +128,9 @@ namespace team36
             }
             if (inputplace == 4)
             {
-                Debug.Log(this + " Wins");
-                inputplace = 0;
+                
+                outputManager.PlayerWins(this);
+               // waitTime = 1;
 
             }
    

@@ -1104,6 +1104,7 @@ MonoBehaviour:
   currentInput: 
   inputplace: 0
   failed: 0
+  health: 0
   outputManager: {fileID: 1576783766}
 --- !u!114 &618193836
 MonoBehaviour:
@@ -2132,6 +2133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1576783767}
   - component: {fileID: 1576783766}
+  - component: {fileID: 1576783768}
   m_Layer: 0
   m_Name: MasterController
   m_TagString: Untagged
@@ -2151,9 +2153,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6174536fb5b00a4f9ebd55a3b84e29a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  getInputFrom: 2
+  getInputFrom: 0
   comboReq: []
   combolength: 4
+  player1: {fileID: 2015666635}
+  player2: {fileID: 618193834}
 --- !u!4 &1576783767
 Transform:
   m_ObjectHideFlags: 0
@@ -2169,6 +2173,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1576783768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576783765}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f4619e5bbe26cd4cacae6a07a3fc97c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  getInputFrom: 0
 --- !u!1001 &1582694574
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2723,7 +2740,7 @@ Transform:
   m_GameObject: {fileID: 1962510635}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 1.15, y: -0.59, z: -2.537}
+  m_LocalPosition: {x: 1.15, y: -0.53, z: -2.537}
   m_LocalScale: {x: 0.11584066, y: 0.11584066, z: 0.11584066}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2974,6 +2991,7 @@ MonoBehaviour:
   currentInput: 
   inputplace: 0
   failed: 0
+  health: 0
   outputManager: {fileID: 1576783766}
 --- !u!1 &2071068938 stripped
 GameObject:
