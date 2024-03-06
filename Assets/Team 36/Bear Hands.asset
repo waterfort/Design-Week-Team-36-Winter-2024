@@ -10,19 +10,31 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d24fbde2c24ab1544bd81b52842e8ec5, type: 3}
-  m_Name: Prototype
+  m_Name: Bear Hands
   m_EditorClassIdentifier: 
   includeInRandomizer: 1
   teamNumber: 0
-  gameTitle: prototype
+  gameTitle: Bear Hands
   gameIcon: {fileID: 0}
-  prompt: Fight
-  singlePlayerScene: {fileID: 102900000, guid: faf41e02b60935543b989f8e0395f4a8, type: 3}
-  twoPlayerScene: {fileID: 0}
-  controls: []
+  prompt: Fight!
+  singlePlayerScene: {fileID: 0}
+  twoPlayerScene: {fileID: 102900000, guid: faf41e02b60935543b989f8e0395f4a8, type: 3}
+  controls:
+  - label: 
+    primary: 4
+    joiner: 0
+    secondary: 0
+  - label: 
+    primary: 0
+    joiner: 0
+    secondary: 0
+  - label: 
+    primary: 0
+    joiner: 0
+    secondary: 0
   rightPlayerAltControls: []
-  singlePlayerScenePath: Assets/Team 36/Scenes/Protoype.unity
-  twoPlayerScenePath: 
+  singlePlayerScenePath: 
+  twoPlayerScenePath: Assets/Team 36/Scenes/Bear Hands.unity
   postgameMessages: []
   bannerImage: {fileID: 0}
   developerCredits: []

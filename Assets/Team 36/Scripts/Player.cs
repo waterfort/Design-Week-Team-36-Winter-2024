@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Team36;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
@@ -13,11 +14,12 @@ namespace team36
 
         public string currentInput;
 
-        public GameObject inputs;
+        public Outputmanager outputManager;
         private void Start()
         {
             lastInput = Vector2.zero;
             direction = Vector2.zero;
+            outputManager.ComboInitiator();
 
         }
         private void Update()
@@ -52,6 +54,8 @@ namespace team36
                 currentInput = "Down";
                 lastInput = direction;
             }
+           
+            
         }
 
         protected override void OnButton1Pressed(InputAction.CallbackContext context)

@@ -29,7 +29,7 @@ namespace Team36
         // Start is called before the first frame update
         void Start()
         {
-           ComboInitiator();
+           
             
         }
 
@@ -38,7 +38,7 @@ namespace Team36
         {
             
         }
-        void ComboInitiator()
+        public void ComboInitiator()
         {
             comboReq = new string[combolength];
             for (int i = 0; i < combolength; i++)
