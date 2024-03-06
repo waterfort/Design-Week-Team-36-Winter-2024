@@ -15,6 +15,7 @@ namespace team36
         public string currentInput;
 
         public int inputplace = 0;
+       
 
         public Outputmanager outputManager;
         private void Start()
