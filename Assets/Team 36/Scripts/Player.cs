@@ -62,7 +62,10 @@ namespace team36
                 lastInput = direction;
                 checkInput();
             }
-
+            if (currentInput == "None")
+            {
+                lastInput = direction;
+            }
             
 
 
@@ -102,6 +105,13 @@ namespace team36
                 currentInput = "None";
                 inputplace ++;
                     
+            }
+            else if (currentInput != outputManager.comboReq[inputplace])
+            {
+                Debug.Log("bad");
+                currentInput = "None"; 
+                inputplace = 0;
+
             }
             if (inputplace == 4)
             {

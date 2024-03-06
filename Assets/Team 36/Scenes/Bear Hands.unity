@@ -162,6 +162,8 @@ MonoBehaviour:
   - {fileID: 795205335, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
   - {fileID: 149672342, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
   - {fileID: -2015738027, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
+  inputRef: 0
+  outputManager: {fileID: 1576783766}
 --- !u!212 &131646180 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: -4617327422405782650, guid: 885228cc5012b2b48abf43175ab38604, type: 3}
@@ -216,6 +218,8 @@ MonoBehaviour:
   - {fileID: 795205335, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
   - {fileID: 149672342, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
   - {fileID: -2015738027, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
+  inputRef: 3
+  outputManager: {fileID: 1576783766}
 --- !u!212 &135557028 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: -4617327422405782650, guid: 885228cc5012b2b48abf43175ab38604, type: 3}
@@ -251,9 +255,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 131646181}
-  - {fileID: 135557026}
-  - {fileID: 1683635310}
   - {fileID: 264963792}
+  - {fileID: 1683635310}
+  - {fileID: 135557026}
   - {fileID: 737907772}
   - {fileID: 365899195}
   - {fileID: 2071068939}
@@ -304,6 +308,8 @@ MonoBehaviour:
   - {fileID: 795205335, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
   - {fileID: 149672342, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
   - {fileID: -2015738027, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
+  inputRef: 1
+  outputManager: {fileID: 1576783766}
 --- !u!212 &264963794 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: -4617327422405782650, guid: 885228cc5012b2b48abf43175ab38604, type: 3}
@@ -386,6 +392,8 @@ MonoBehaviour:
   - {fileID: 795205335, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
   - {fileID: 149672342, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
   - {fileID: -2015738027, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
+  inputRef: 1
+  outputManager: {fileID: 1576783766}
 --- !u!212 &365899197 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: -4617327422405782650, guid: 885228cc5012b2b48abf43175ab38604, type: 3}
@@ -832,6 +840,8 @@ MonoBehaviour:
   - {fileID: 795205335, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
   - {fileID: 149672342, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
   - {fileID: -2015738027, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
+  inputRef: 0
+  outputManager: {fileID: 1576783766}
 --- !u!212 &737907774 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: -4617327422405782650, guid: 885228cc5012b2b48abf43175ab38604, type: 3}
@@ -1183,6 +1193,8 @@ MonoBehaviour:
   - {fileID: 795205335, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
   - {fileID: 149672342, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
   - {fileID: -2015738027, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
+  inputRef: 3
+  outputManager: {fileID: 1576783766}
 --- !u!212 &1183601435 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: -4617327422405782650, guid: 885228cc5012b2b48abf43175ab38604, type: 3}
@@ -1377,7 +1389,7 @@ PrefabInstance:
       objectReference: {fileID: -1722046558, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
     - target: {fileID: 6253631017565567287, guid: 885228cc5012b2b48abf43175ab38604, type: 3}
       propertyPath: m_Name
-      value: P1 input 2
+      value: P1 input 4
       objectReference: {fileID: 0}
     - target: {fileID: 9084479298637007815, guid: 885228cc5012b2b48abf43175ab38604, type: 3}
       propertyPath: m_LocalScale.x
@@ -1453,7 +1465,7 @@ PrefabInstance:
       objectReference: {fileID: -1722046558, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
     - target: {fileID: 6253631017565567287, guid: 885228cc5012b2b48abf43175ab38604, type: 3}
       propertyPath: m_Name
-      value: P1 input 4
+      value: P1 input 2
       objectReference: {fileID: 0}
     - target: {fileID: 9084479298637007815, guid: 885228cc5012b2b48abf43175ab38604, type: 3}
       propertyPath: m_LocalScale.x
@@ -1559,6 +1571,8 @@ MonoBehaviour:
   - {fileID: 795205335, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
   - {fileID: 149672342, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
   - {fileID: -2015738027, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
+  inputRef: 2
+  outputManager: {fileID: 1576783766}
 --- !u!212 &1683635312 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: -4617327422405782650, guid: 885228cc5012b2b48abf43175ab38604, type: 3}
@@ -2105,6 +2119,8 @@ MonoBehaviour:
   - {fileID: 795205335, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
   - {fileID: 149672342, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
   - {fileID: -2015738027, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
+  inputRef: 2
+  outputManager: {fileID: 1576783766}
 --- !u!212 &2071068941 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: -4617327422405782650, guid: 885228cc5012b2b48abf43175ab38604, type: 3}
