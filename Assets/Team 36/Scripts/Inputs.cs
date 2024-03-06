@@ -15,6 +15,7 @@ namespace Team36
         public string display;
         public int spriteLocation;
 
+        private float waitTime = 1;
         
 
         //6 is for success, 14 for fail
@@ -27,28 +28,35 @@ namespace Team36
         // Start is called before the first frame update
         void Start()
         {
-
+            waitTime = 1;
         }
 
         // Update is called once per frame
         void Update()
         {
+            
+
             if (player.inputplace > inputRef)
             {
                 buttonstate = 6;
             }
-            if (player.failed == true)
+            if (player.inputplace == inputRef && player.failed == true)
             {
+                //Debug.Log(this + "failed");
                 buttonstate = 12;
-                //Debug.Log("before");
+                
+                waitTime -= Time.deltaTime;
+                if (waitTime < 0)
+                {
+                    Debug.Log("fail");
+                    buttonstate = 0;
+                    player.failed = false;
+                    waitTime = 1;
+                    player.inputplace = 0;
+                }
 
-                waitTimer(2);
 
-               
-                Debug.Log("After");
-                player.failed = false;
-                buttonstate = 0;
-                    
+
             }
             if (player.inputplace <= inputRef && player.failed == false)
             {
@@ -87,19 +95,11 @@ namespace Team36
                 spriteLocation = 6 + buttonstate;
             }
 
-
+            
 
             spriteRenderer.sprite = sprites[spriteLocation];
 
         }
-        void waitTimer(float waitTime)
-        {
-            waitTime -= waitTime * Time.deltaTime;
-
-            if(waitTime < 0)
-            {
-                return;
-            }
-        }
+        
     }
 }
