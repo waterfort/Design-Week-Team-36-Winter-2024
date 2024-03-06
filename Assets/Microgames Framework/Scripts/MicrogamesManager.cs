@@ -362,6 +362,9 @@ public class MicrogamesManager : MonoBehaviour
             return;
         } else {
             _quickTestModeScene = currentScene.path;
+            if (string.IsNullOrEmpty(_quickTestModeScene)) {
+                Debug.LogWarning("Save this scene before you can use it with the Microgame Framework.");
+            }
         }
 
         // Check for game objects with components inheriting from MicrogameEvents or MicrogameInputEvents
