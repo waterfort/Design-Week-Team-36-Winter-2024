@@ -104,7 +104,7 @@ namespace team36
                 Debug.Log("good");
                 currentInput = "None";
                 inputplace ++;
-                    
+                   
             }
             else if (currentInput != outputManager.comboReq[inputplace])
             {

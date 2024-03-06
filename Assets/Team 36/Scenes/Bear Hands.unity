@@ -163,7 +163,11 @@ MonoBehaviour:
   - {fileID: 149672342, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
   - {fileID: -2015738027, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
   inputRef: 0
+  display: 
+  spriteLocation: 0
+  buttonstate: 0
   outputManager: {fileID: 1576783766}
+  player: {fileID: 2015666635}
 --- !u!212 &131646180 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: -4617327422405782650, guid: 885228cc5012b2b48abf43175ab38604, type: 3}
@@ -219,7 +223,11 @@ MonoBehaviour:
   - {fileID: 149672342, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
   - {fileID: -2015738027, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
   inputRef: 3
+  display: 
+  spriteLocation: 0
+  buttonstate: 0
   outputManager: {fileID: 1576783766}
+  player: {fileID: 2015666635}
 --- !u!212 &135557028 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: -4617327422405782650, guid: 885228cc5012b2b48abf43175ab38604, type: 3}
@@ -309,7 +317,11 @@ MonoBehaviour:
   - {fileID: 149672342, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
   - {fileID: -2015738027, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
   inputRef: 1
+  display: 
+  spriteLocation: 0
+  buttonstate: 0
   outputManager: {fileID: 1576783766}
+  player: {fileID: 2015666635}
 --- !u!212 &264963794 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: -4617327422405782650, guid: 885228cc5012b2b48abf43175ab38604, type: 3}
@@ -393,7 +405,11 @@ MonoBehaviour:
   - {fileID: 149672342, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
   - {fileID: -2015738027, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
   inputRef: 1
+  display: 
+  spriteLocation: 0
+  buttonstate: 0
   outputManager: {fileID: 1576783766}
+  player: {fileID: 618193834}
 --- !u!212 &365899197 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: -4617327422405782650, guid: 885228cc5012b2b48abf43175ab38604, type: 3}
@@ -841,7 +857,11 @@ MonoBehaviour:
   - {fileID: 149672342, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
   - {fileID: -2015738027, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
   inputRef: 0
+  display: 
+  spriteLocation: 0
+  buttonstate: 0
   outputManager: {fileID: 1576783766}
+  player: {fileID: 618193834}
 --- !u!212 &737907774 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: -4617327422405782650, guid: 885228cc5012b2b48abf43175ab38604, type: 3}
@@ -1194,7 +1214,11 @@ MonoBehaviour:
   - {fileID: 149672342, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
   - {fileID: -2015738027, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
   inputRef: 3
+  display: 
+  spriteLocation: 0
+  buttonstate: 0
   outputManager: {fileID: 1576783766}
+  player: {fileID: 618193834}
 --- !u!212 &1183601435 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: -4617327422405782650, guid: 885228cc5012b2b48abf43175ab38604, type: 3}
@@ -1572,7 +1596,11 @@ MonoBehaviour:
   - {fileID: 149672342, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
   - {fileID: -2015738027, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
   inputRef: 2
+  display: 
+  spriteLocation: 0
+  buttonstate: 0
   outputManager: {fileID: 1576783766}
+  player: {fileID: 2015666635}
 --- !u!212 &1683635312 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: -4617327422405782650, guid: 885228cc5012b2b48abf43175ab38604, type: 3}
@@ -2120,7 +2148,11 @@ MonoBehaviour:
   - {fileID: 149672342, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
   - {fileID: -2015738027, guid: b568acce15a63a94c819c2691cd54c54, type: 3}
   inputRef: 2
+  display: 
+  spriteLocation: 0
+  buttonstate: 0
   outputManager: {fileID: 1576783766}
+  player: {fileID: 618193834}
 --- !u!212 &2071068941 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: -4617327422405782650, guid: 885228cc5012b2b48abf43175ab38604, type: 3}
