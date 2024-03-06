@@ -17,7 +17,7 @@ namespace Team36
         // Update is called once per frame
         void Update()
         {
-
+            spriteRenderer.sprite = sprites[1];
         }
     }
 }
