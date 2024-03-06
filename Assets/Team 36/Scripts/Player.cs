@@ -113,9 +113,10 @@ namespace team36
             {
                 Debug.Log("bad");
                 currentInput = "None"; 
-                inputplace = 0;
+
+                //inputplace = 0;
                 failed = true;
-                
+
 
             }
             if (inputplace == 4)
