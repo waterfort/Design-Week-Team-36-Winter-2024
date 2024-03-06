@@ -29,7 +29,7 @@ namespace Team36
         // Start is called before the first frame update
         void Start()
         {
-           
+            ComboInitiator();
             
         }
 
@@ -56,7 +56,7 @@ namespace Team36
                     i-- ;
                 }
                 lastInput = randomInput;
-                print(i + "   " + output);
+               //print(i + "   " + output);
             }
             //Debug.Log(comboReq);
         }   
