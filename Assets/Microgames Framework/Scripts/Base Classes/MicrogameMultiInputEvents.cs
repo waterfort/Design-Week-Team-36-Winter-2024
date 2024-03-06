@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 /// <summary>
 /// Use for a COOP controller that processes both players' control input events.
 /// </summary>
-public abstract class MicrogameMultyInputEvents : MicrogameEvents
+public abstract class MicrogameMultiInputEvents : MicrogameEvents
 {
     public InputSource getInputFrom; // Identifies which player control set is used by this script
     protected InputAction leftButton1;
