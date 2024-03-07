@@ -17,14 +17,9 @@ namespace Team36
 
         private float waitTime = 1;
 
-<<<<<<< HEAD
 
-=======
-        //public Animator animator;
+        public Animator animator;
        
->>>>>>> bfe14f143d2ecd6b9b2852ea6f5ced04669ccb4d
-
-
 
         //6 is for success, 14 for fail
         public int buttonstate = 0;
