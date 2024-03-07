@@ -167,6 +167,7 @@ MonoBehaviour:
   inputRef: 0
   display: 
   spriteLocation: 0
+  animator: {fileID: 0}
   buttonstate: 0
   outputManager: {fileID: 1576783766}
   player: {fileID: 2015666635}
@@ -229,6 +230,7 @@ MonoBehaviour:
   inputRef: 3
   display: 
   spriteLocation: 0
+  animator: {fileID: 0}
   buttonstate: 0
   outputManager: {fileID: 1576783766}
   player: {fileID: 2015666635}
@@ -325,6 +327,7 @@ MonoBehaviour:
   inputRef: 1
   display: 
   spriteLocation: 0
+  animator: {fileID: 0}
   buttonstate: 0
   outputManager: {fileID: 1576783766}
   player: {fileID: 2015666635}
@@ -415,6 +418,7 @@ MonoBehaviour:
   inputRef: 1
   display: 
   spriteLocation: 0
+  animator: {fileID: 0}
   buttonstate: 0
   outputManager: {fileID: 1576783766}
   player: {fileID: 618193834}
@@ -1268,6 +1272,7 @@ MonoBehaviour:
   inputRef: 0
   display: 
   spriteLocation: 0
+  animator: {fileID: 0}
   buttonstate: 0
   outputManager: {fileID: 1576783766}
   player: {fileID: 618193834}
@@ -1346,8 +1351,8 @@ Transform:
   m_GameObject: {fileID: 989515123}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.15, y: -0.53, z: -2.537}
-  m_LocalScale: {x: 0.185, y: 0.185, z: 0.185}
+  m_LocalPosition: {x: -1.5, y: -0.27, z: -1.7}
+  m_LocalScale: {x: 0.301106, y: 0.301106, z: 0.301106}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 292935052}
@@ -1667,6 +1672,7 @@ MonoBehaviour:
   inputRef: 3
   display: 
   spriteLocation: 0
+  animator: {fileID: 0}
   buttonstate: 0
   outputManager: {fileID: 1576783766}
   player: {fileID: 618193834}
@@ -2565,6 +2571,7 @@ MonoBehaviour:
   inputRef: 2
   display: 
   spriteLocation: 0
+  animator: {fileID: 0}
   buttonstate: 0
   outputManager: {fileID: 1576783766}
   player: {fileID: 2015666635}
@@ -2904,8 +2911,8 @@ Transform:
   m_GameObject: {fileID: 1962510635}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 1.15, y: -0.53, z: -2.537}
-  m_LocalScale: {x: 0.1854609, y: 0.1854609, z: 0.1854609}
+  m_LocalPosition: {x: 1.5, y: -0.26999998, z: -1.7}
+  m_LocalScale: {x: 0.30185613, y: 0.30185613, z: 0.30185613}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 819166953}
@@ -3175,6 +3182,7 @@ MonoBehaviour:
   inputRef: 2
   display: 
   spriteLocation: 0
+  animator: {fileID: 0}
   buttonstate: 0
   outputManager: {fileID: 1576783766}
   player: {fileID: 618193834}
