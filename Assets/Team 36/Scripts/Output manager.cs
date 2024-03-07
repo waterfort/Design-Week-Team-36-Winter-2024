@@ -41,6 +41,7 @@ namespace Team36
 
         public Animator animatorP1;
         public Animator animatorP2;
+        public Animator m_animator;
 
         public Heartmanager p1Heart1;
         public Heartmanager p1Heart2;
@@ -106,6 +107,8 @@ namespace Team36
                 p1Heart3.EmptyHeart();
 
                 isGameOver = true;
+                //animatorP1.SetTrigger("loser");
+               // animatorP2.SetTrigger("winner");
 
                 Invoke("gameEnd", 0.5f);
 
@@ -136,6 +139,8 @@ namespace Team36
                 p2Heart3.EmptyHeart();
 
                 isGameOver = true;
+                //animatorP1.SetTrigger("winner");
+                //animatorP2.SetTrigger("loser");
 
                 Invoke("gameEnd", 0.5f);
 
@@ -184,6 +189,7 @@ namespace Team36
             {
                 animatorP2.SetTrigger("wasPunched");
                 animatorP1.SetTrigger("punch");
+                m_animator.SetTrigger("masterSuccess");
                 player2.health--;
                 isRoundOver = true;
 
@@ -214,19 +220,25 @@ namespace Team36
             goHeartp2b.SetActive(false);
             goHeartp2c.SetActive(false);
 
+
             if (player1.health <= 0)
             {
-                
+
                 //p2 wins
+                animatorP1.SetTrigger("loser");
+                animatorP2.SetTrigger("winner");
                 ReportGameCompletedEarly();
                 player1.health = 3;
+
                 
                 
             }
             if (player2.health <= 0)
             {
-               
+
                 //p1 wins
+                animatorP1.SetTrigger("winner");
+                animatorP2.SetTrigger("loser");
                 ReportGameCompletedEarly();
                 player2.health = 3;
 
