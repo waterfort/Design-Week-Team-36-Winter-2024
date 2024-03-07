@@ -20,5 +20,15 @@ namespace Team36
         {
 
         }
+
+        void FullHeart()
+        {
+
+        }
+
+        void EmptyHeart()
+        {
+
+        }
     }
 }
