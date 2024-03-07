@@ -16,6 +16,8 @@ namespace Team36
         public int spriteLocation;
 
         private float waitTime = 1;
+
+        public bool isGameOver = false;
         
         
 
@@ -30,11 +32,16 @@ namespace Team36
         void Start()
         {
             waitTime = 1;
+            isGameOver = false;
         }
 
         // Update is called once per frame
         void Update()
         {
+            if(isGameOver == true)
+            {
+                display = "None";
+            }
             if (outputManager.isRoundOver == true)
             {
                 Invoke("screenwipe", 0.5f);
