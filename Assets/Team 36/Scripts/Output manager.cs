@@ -105,17 +105,11 @@ namespace Team36
                 p1Heart2.EmptyHeart();
                 p1Heart3.EmptyHeart();
 
-                goHeartp2a.SetActive(false);
-                goHeartp2b.SetActive(false);
-                goHeartp2c.SetActive(false);
-
-                goHeartp1a.SetActive(false);
-                goHeartp1b.SetActive(false);
-                goHeartp1c.SetActive(false);
-
                 isGameOver = true;
 
-                gameEnd();
+                Invoke("gameEnd", 0.5f);
+
+                
             }
             if (player2.health == 3)
             {
@@ -141,17 +135,14 @@ namespace Team36
                 p2Heart2.EmptyHeart();
                 p2Heart3.EmptyHeart();
 
-                goHeartp1a.SetActive(false);
-                goHeartp1b.SetActive(false);
-                goHeartp1c.SetActive(false);
-
-                goHeartp2a.SetActive(false);
-                goHeartp2b.SetActive(false);
-                goHeartp2c.SetActive(false);
-
                 isGameOver = true;
 
-                gameEnd();
+                Invoke("gameEnd", 0.5f);
+
+
+                
+
+
             }
 
             if (StartTimer == true)
@@ -215,7 +206,14 @@ namespace Team36
         }
         public void gameEnd()
         {
-            
+            goHeartp1a.SetActive(false);
+            goHeartp1b.SetActive(false);
+            goHeartp1c.SetActive(false);
+
+            goHeartp2a.SetActive(false);
+            goHeartp2b.SetActive(false);
+            goHeartp2c.SetActive(false);
+
             if (player1.health <= 0)
             {
                 
