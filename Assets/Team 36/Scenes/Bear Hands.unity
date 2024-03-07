@@ -2359,6 +2359,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -9123760093474080377, guid: 6013eaf9dc082524ba7701feea22f402, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 75d85ba30cc4cf94f9d4928bdaee5a7c, type: 2}
     - target: {fileID: -8679921383154817045, guid: 6013eaf9dc082524ba7701feea22f402, type: 3}
       propertyPath: m_LocalScale.x
       value: 83.52984
@@ -2443,6 +2447,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dojo-Background (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5151696386549591685, guid: 6013eaf9dc082524ba7701feea22f402, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 75d85ba30cc4cf94f9d4928bdaee5a7c, type: 2}
+    - target: {fileID: 8247994413960396516, guid: 6013eaf9dc082524ba7701feea22f402, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 75d85ba30cc4cf94f9d4928bdaee5a7c, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2551,9 +2563,9 @@ Camera:
   m_LensShift: {x: 0, y: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
-    x: 0.14876035
+    x: 0
     y: 0
-    width: 0.7024793
+    width: 1
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
