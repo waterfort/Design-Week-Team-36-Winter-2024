@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: Bear Hands
   m_EditorClassIdentifier: 
   includeInRandomizer: 1
-  teamNumber: 0
+  teamNumber: 36
   gameTitle: Bear Hands
   gameIcon: {fileID: 0}
-  prompt: Fight!
+  announcerText: Fight!
+  announcerAudioFile: Fight-Best-Take
+  _announcerAudio: {fileID: 8300000, guid: 0108da66f2d0a294b853b618e0f62121, type: 3}
   singlePlayerScene: {fileID: 0}
   twoPlayerScene: {fileID: 102900000, guid: faf41e02b60935543b989f8e0395f4a8, type: 3}
   controls:
@@ -25,11 +27,11 @@ MonoBehaviour:
     joiner: 0
     secondary: 0
   - label: 
-    primary: 0
+    primary: 1
     joiner: 0
     secondary: 0
   - label: 
-    primary: 0
+    primary: 2
     joiner: 0
     secondary: 0
   rightPlayerAltControls: []
