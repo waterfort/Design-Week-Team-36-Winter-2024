@@ -37,57 +37,61 @@ namespace team36
         }
         private void Update()
         {
+            if (outputManager.isRoundOver == false)
+            {
+                direction = stick.normalized;
 
-            direction = stick.normalized;
+                if (direction.x == 1 && lastInput.x != 1)
+                {
+                    //right
+                    //  Debug.Log("Right");
+                    currentInput = "Right";
+                    lastInput = direction;
+                    checkInput();
+                }
+                if (direction.x == -1 && lastInput.x != -1)
+                {
+                    //left
+                    // Debug.Log("Left");
+                    currentInput = "Left";
+                    lastInput = direction;
+                    checkInput();
+                }
+                if (direction.y == 1 && lastInput.y != 1)
+                {
+                    //up
+                    // Debug.Log("Up");
+                    currentInput = "Up";
+                    lastInput = direction;
+                    checkInput();
+                }
+                if (direction.y == -1 && lastInput.y != -1)
+                {
+                    //down
+                    //Debug.Log("Down");
+                    currentInput = "Down";
+                    lastInput = direction;
+                    checkInput();
+                }
+                if (currentInput == "None")
+                {
 
-            if (direction.x == 1 && lastInput.x != 1)
-            {
-                //right
-              //  Debug.Log("Right");
-                currentInput = "Right";
-                lastInput = direction;
-                checkInput();
-            }
-            if (direction.x == -1 && lastInput.x != -1)
-            {
-                //left
-               // Debug.Log("Left");
-                currentInput = "Left";
-                lastInput = direction;
-                checkInput();
-            }
-            if (direction.y == 1 && lastInput.y != 1)
-            {
-                //up
-               // Debug.Log("Up");
-                currentInput = "Up";
-                lastInput = direction;
-                checkInput();
-            }
-            if (direction.y == -1 && lastInput.y != -1)
-            {
-                //down
-                //Debug.Log("Down");
-                currentInput = "Down";
-                lastInput = direction;
-                checkInput();
-            }
-            if (currentInput == "None")
-            {
-                
-                lastInput = direction;
-            }
-            
+                    lastInput = direction;
+                }
 
+            }
 
         }
 
         protected override void OnButton1Pressed(InputAction.CallbackContext context)
         {
 
-           // Debug.Log("Do action 1");
-            currentInput = "Button1";
-            checkInput();
+            // Debug.Log("Do action 1");
+            if (outputManager.isRoundOver == false)
+            {
+                currentInput = "Button1";
+                checkInput();
+            }
 
         }
 
@@ -96,9 +100,12 @@ namespace team36
         protected override void OnButton2Pressed(InputAction.CallbackContext context)
         {
 
-           // Debug.Log("Do action 2");
-            currentInput = "Button2";
-            checkInput();
+            // Debug.Log("Do action 2");
+            if (outputManager.isRoundOver == false)
+            {
+                currentInput = "Button2";
+                checkInput();
+            }
 
         }
 
@@ -110,14 +117,14 @@ namespace team36
         public void checkInput()
         {
            
-            if (currentInput == outputManager.comboReq[inputplace] && failed == false)
+            if (currentInput == outputManager.comboReq[inputplace] && failed == false && outputManager.isRoundOver == false)
             {
                 Debug.Log("good");
                 currentInput = "None";
                 inputplace ++;
                    
             }
-            else if (currentInput != outputManager.comboReq[inputplace] && failed == false)
+            else if (currentInput != outputManager.comboReq[inputplace] && failed == false && outputManager.isRoundOver == false)
             {
                 Debug.Log("bad");
                 
@@ -131,8 +138,9 @@ namespace team36
             }
             if (inputplace == 4)
             {
-                
+                outputManager.StartTimer = true;
                 outputManager.PlayerWins(this);
+                
                // waitTime = 1;
 
             }

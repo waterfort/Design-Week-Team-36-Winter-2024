@@ -35,16 +35,7 @@ namespace Team36
         // Update is called once per frame
         void Update()
         {
-            if(outputManager.isRoundOver == true)
-            {
-                //none of this works yet cause it gets skipped over if u ever set is round over back to false either here or in output manager.
-      
-                //print("hi");
-               // outputManager.waitTime = 1;
-               // buttonstate = 6;
-               // display = "None";
-
-            }
+            
 
             if (player.inputplace > inputRef)
             {
@@ -75,10 +66,10 @@ namespace Team36
                 buttonstate = 0;
             }
             
-            //if(outputManager.isRoundOver == false)
-           // {
+            if(outputManager.isRoundOver == false)
+            {
                 display = outputManager.comboReq[inputRef];
-           // }
+            }
             
 
             if(display == "Up")

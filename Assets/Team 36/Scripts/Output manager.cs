@@ -1,6 +1,7 @@
 using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using team36;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -29,6 +30,7 @@ namespace Team36
         public Player player2;
 
         public bool isRoundOver = false;
+        public bool StartTimer = false;
 
         private Vector2 playerOutputDirection;
         // Start is called before the first frame update
@@ -42,7 +44,15 @@ namespace Team36
         // Update is called once per frame
         void Update()
         {
-            
+            if (StartTimer == true)
+            {
+                waitTime -= Time.deltaTime;
+                if (waitTime < 0)
+                { 
+                    StartTimer = false;
+                }       
+            }
+
         }
         public void ComboInitiator()
         {
@@ -72,21 +82,21 @@ namespace Team36
             if (winner.name == "Player 1 Controller")
             {
                 player2.health--;
-                waitTime -= Time.deltaTime;
-                roundreset();
+                isRoundOver = true;
+
+                Debug.Log("Test");
                 ComboInitiator();
+                Invoke("roundreset", 1);
+
             }
             if (winner.name == "Player 2 Controller")
             {
                 player1.health--;
                 isRoundOver = true;
-                //waitTime -= Time.deltaTime;
-               // if (waitTime < 0)
-               //{
-                    roundreset();
-                    ComboInitiator();
-                   // waitTime = 1;
-                //}
+
+                Debug.Log("Test");
+                ComboInitiator();
+                Invoke("roundreset", 1);
             }
         }
         public void gameEnd()
@@ -102,6 +112,7 @@ namespace Team36
         }
         public void roundreset()
         {
+            Debug.Log("reset");
             player2.inputplace = 0;
             player1.inputplace = 0;
             isRoundOver = false;
