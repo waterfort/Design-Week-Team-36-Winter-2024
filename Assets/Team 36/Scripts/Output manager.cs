@@ -44,6 +44,13 @@ namespace Team36
         public Heartmanager p2Heart1;
         public Heartmanager p2Heart2;
         public Heartmanager p2Heart3;
+
+        public GameObject goHeartp1a;
+        public GameObject goHeartp1b;
+        public GameObject goHeartp1c;
+        public GameObject goHeartp2a;
+        public GameObject goHeartp2b;
+        public GameObject goHeartp2c;
         // Start is called before the first frame update
         void Start()
         {
@@ -52,7 +59,16 @@ namespace Team36
             waitTime = 1;
             player1.health = 3;
             player2.health = 3;
-            
+
+
+            goHeartp1a.SetActive(true);
+            goHeartp1b.SetActive(true);
+            goHeartp1c.SetActive(true);
+            goHeartp2a.SetActive(true);
+            goHeartp2b.SetActive(true);
+            goHeartp2c.SetActive(true);
+
+
         }
 
         // Update is called once per frame
@@ -83,7 +99,15 @@ namespace Team36
                 p1Heart1.EmptyHeart();
                 p1Heart2.EmptyHeart();
                 p1Heart3.EmptyHeart();
-                
+
+                goHeartp2a.SetActive(false);
+                goHeartp2b.SetActive(false);
+                goHeartp2c.SetActive(false);
+
+                goHeartp1a.SetActive(false);
+                goHeartp1b.SetActive(false);
+                goHeartp1c.SetActive(false);
+
                 gameEnd();
             }
             if (player2.health == 3)
@@ -109,7 +133,15 @@ namespace Team36
                 p2Heart1.EmptyHeart();
                 p2Heart2.EmptyHeart();
                 p2Heart3.EmptyHeart();
-                
+
+                goHeartp1a.SetActive(false);
+                goHeartp1b.SetActive(false);
+                goHeartp1c.SetActive(false);
+
+                goHeartp2a.SetActive(false);
+                goHeartp2b.SetActive(false);
+                goHeartp2c.SetActive(false);
+
                 gameEnd();
             }
 
