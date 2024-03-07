@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5f7e58a829ce98047aad768ad35ef34e
+guid: 6f8ec7969be30ae4da1c759a99a37341
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -136,13 +136,55 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spritesheet_1_resize_test_0
+      name: punchingBag_spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e131e6b4ebe78e40b85c0155ac99720
+      internalID: 44740793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: punchingBag_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 500
+        width: 500
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c36764025aa124a4bb31f379f3d442d1
+      internalID: 1580826857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: punchingBag_spritesheet_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1754
-        height: 1240
+        width: 500
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b65e5ffba0ae4de47a3506ac70800730
-      internalID: 745415625
+      spriteID: 45bcd437bcb10db468990e350fe1250f
+      internalID: 1787209713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_1_resize_test_1
+      name: punchingBag_spritesheet_3
       rect:
         serializedVersion: 2
-        x: 1754
+        x: 500
         y: 0
-        width: 1754
-        height: 1240
+        width: 500
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,155 +213,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8209dd64fdfb6464a8c5f58e096dff6c
-      internalID: -2122273667
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_1_resize_test_2
-      rect:
-        serializedVersion: 2
-        x: 3508
-        y: 0
-        width: 1754
-        height: 1240
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 61e377cd6acafa948a094f20939e6506
-      internalID: -776452087
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_1_resize_test_3
-      rect:
-        serializedVersion: 2
-        x: 5262
-        y: 0
-        width: 1754
-        height: 1240
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8d1113d33e9fcce4680c69075346fb12
-      internalID: -1836391120
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_1_resize_test_4
-      rect:
-        serializedVersion: 2
-        x: 7016
-        y: 0
-        width: 1754
-        height: 1240
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1cc5b23adca561b4bbc70bfb9775fc2b
-      internalID: 370902278
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_1_resize_test_5
-      rect:
-        serializedVersion: 2
-        x: 8770
-        y: 0
-        width: 1754
-        height: 1240
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a79549d55588b74ea234f01b19292de
-      internalID: 20290563
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_1_resize_test_6
-      rect:
-        serializedVersion: 2
-        x: 10524
-        y: 0
-        width: 1754
-        height: 1240
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f3f00e22434af7c4d9e934d10832ca3c
-      internalID: 478582158
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_1_resize_test_7
-      rect:
-        serializedVersion: 2
-        x: 12278
-        y: 0
-        width: 1754
-        height: 1240
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 174cde23aae5a73428a2f0fa1377b3a5
-      internalID: -785535964
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet_1_resize_test_8
-      rect:
-        serializedVersion: 2
-        x: 14032
-        y: 0
-        width: 1754
-        height: 1240
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4aa8d7a5a82848845a9d332bfc4b9dbd
-      internalID: 145013704
+      spriteID: eb59900333c30da4a954c9088844dae3
+      internalID: -467064313
       vertices: []
       indices: 
       edges: []
@@ -335,15 +230,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      spritesheet_1_resize_test_0: 745415625
-      spritesheet_1_resize_test_1: -2122273667
-      spritesheet_1_resize_test_2: -776452087
-      spritesheet_1_resize_test_3: -1836391120
-      spritesheet_1_resize_test_4: 370902278
-      spritesheet_1_resize_test_5: 20290563
-      spritesheet_1_resize_test_6: 478582158
-      spritesheet_1_resize_test_7: -785535964
-      spritesheet_1_resize_test_8: 145013704
+      punchingBag_spritesheet_0: 44740793
+      punchingBag_spritesheet_1: 1580826857
+      punchingBag_spritesheet_2: 1787209713
+      punchingBag_spritesheet_3: -467064313
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
