@@ -26,7 +26,7 @@ namespace team36
        // public Animator animator;
 
         
-       
+       public Animator animator;
 
         public Outputmanager outputManager;
         private void Start()
@@ -132,8 +132,10 @@ namespace team36
             {
                 Debug.Log("good");
                 currentInput = "None";
+
                 inputplace ++;
-                   
+                animator.SetTrigger("inputSuccess");
+
             }
             else if (currentInput != outputManager.comboReq[inputplace] && failed == false && outputManager.isRoundOver == false)
             {

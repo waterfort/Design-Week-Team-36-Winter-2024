@@ -17,9 +17,10 @@ namespace Team36
 
         private float waitTime = 1;
 
-        
-        
-        
+        //public Animator animator;
+       
+
+
 
         //6 is for success, 14 for fail
         public int buttonstate = 0;
@@ -50,6 +51,7 @@ namespace Team36
             {
                 //Debug.Log("This line is being hit.");
                 buttonstate = 7;
+                
             }
             if (player.inputplace == inputRef && player.failed == true)
             {

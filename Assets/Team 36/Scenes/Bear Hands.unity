@@ -1013,6 +1013,7 @@ MonoBehaviour:
   inputplace: 0
   failed: 0
   health: 0
+  animator: {fileID: 1962510638}
   outputManager: {fileID: 1576783766}
 --- !u!114 &618193836
 MonoBehaviour:
@@ -1286,7 +1287,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 745415625, guid: 5f7e58a829ce98047aad768ad35ef34e, type: 3}
+  m_Sprite: {fileID: 309568595, guid: 332c82cd6d2922d4daee0aa62e65fdf2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2021,6 +2022,7 @@ MonoBehaviour:
   player2: {fileID: 618193834}
   isRoundOver: 0
   StartTimer: 0
+  isGameOver: 0
   animatorP1: {fileID: 989515126}
   animatorP2: {fileID: 1962510638}
   p1Heart1: {fileID: 1604634199}
@@ -2843,7 +2845,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 745415625, guid: 5f7e58a829ce98047aad768ad35ef34e, type: 3}
+  m_Sprite: {fileID: 309568595, guid: 332c82cd6d2922d4daee0aa62e65fdf2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3016,6 +3018,7 @@ MonoBehaviour:
   inputplace: 0
   failed: 0
   health: 0
+  animator: {fileID: 989515126}
   outputManager: {fileID: 1576783766}
 --- !u!1 &2071068938 stripped
 GameObject:
