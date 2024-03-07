@@ -33,6 +33,9 @@ namespace Team36
         public bool StartTimer = false;
 
         private Vector2 playerOutputDirection;
+
+        public Animator animatorP1;
+        public Animator animatorP2;
         // Start is called before the first frame update
         void Start()
         {
@@ -81,6 +84,7 @@ namespace Team36
             print(winner.name);
             if (winner.name == "Player 1 Controller")
             {
+                animatorP2.SetTrigger("wasPunched");
                 player2.health--;
                 isRoundOver = true;
 
@@ -91,6 +95,7 @@ namespace Team36
             }
             if (winner.name == "Player 2 Controller")
             {
+                animatorP1.SetTrigger("wasPunched");
                 player1.health--;
                 isRoundOver = true;
 

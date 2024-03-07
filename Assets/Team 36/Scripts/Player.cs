@@ -23,7 +23,7 @@ namespace team36
 
         //private float waitTime;
 
-        public Animator animator;
+       // public Animator animator;
 
         
        
@@ -143,7 +143,7 @@ namespace team36
             if (inputplace == 4)
             {
                 outputManager.StartTimer = true;
-                animator.SetTrigger("wasPunched");
+               
                 outputManager.PlayerWins(this);
                 
                // waitTime = 1;
