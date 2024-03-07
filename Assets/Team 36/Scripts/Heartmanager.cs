@@ -18,17 +18,17 @@ namespace Team36
         // Update is called once per frame
         void Update()
         {
-
+              
         }
 
-        void FullHeart()
+        public void FullHeart()
         {
-
+            spriteRenderer.sprite = sprites[0];
         }
 
-        void EmptyHeart()
+        public void EmptyHeart()
         {
-
+            spriteRenderer.sprite = sprites[1];
         }
     }
 }

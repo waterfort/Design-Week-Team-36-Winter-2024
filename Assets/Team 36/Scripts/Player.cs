@@ -19,7 +19,7 @@ namespace team36
 
         public bool failed = false;
 
-        public float health;
+        public float health = 3;
 
         //private float waitTime;
 
@@ -34,10 +34,17 @@ namespace team36
             lastInput = Vector2.zero;
             direction = Vector2.zero;
             //outputManager.ComboInitiator();
-
-            health = 2;
+            inputplace = 0;
+            health = 3;
 
             //waitTime = 1;
+        }
+        private void Awake()
+        {
+            health = 3;
+            lastInput = Vector2.zero;
+            direction = Vector2.zero;
+            
         }
         private void Update()
         {

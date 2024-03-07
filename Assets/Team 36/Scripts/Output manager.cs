@@ -36,17 +36,77 @@ namespace Team36
 
         public Animator animatorP1;
         public Animator animatorP2;
+
+        public Heartmanager p1Heart1;
+        public Heartmanager p1Heart2;
+        public Heartmanager p1Heart3;
+        public Heartmanager p2Heart1;
+        public Heartmanager p2Heart2;
+        public Heartmanager p2Heart3;
         // Start is called before the first frame update
         void Start()
         {
             ComboInitiator();
             isRoundOver = false;
             waitTime = 1;
+            player1.health = 3;
+            player2.health = 3;
         }
 
         // Update is called once per frame
         void Update()
         {
+            gameEnd();
+            //updatehearts here
+            if(player1.health == 3)
+            {
+                p1Heart1.FullHeart();
+                p1Heart2.FullHeart();
+                p1Heart3.FullHeart();
+            }
+            if (player1.health == 2)
+            {
+                p1Heart1.EmptyHeart();
+                p1Heart2.FullHeart();
+                p1Heart3.FullHeart();
+            }
+            if (player1.health == 1)
+            {
+                p1Heart1.EmptyHeart();
+                p1Heart2.EmptyHeart();
+                p1Heart3.FullHeart();
+            }
+            if (player1.health == 0)
+            {
+                p1Heart1.EmptyHeart();
+                p1Heart2.EmptyHeart();
+                p1Heart3.EmptyHeart();
+            }
+            if (player2.health == 3)
+            {
+                p2Heart1.FullHeart();
+                p2Heart2.FullHeart();
+                p2Heart3.FullHeart();
+            }
+            if (player2.health == 2)
+            {
+                p2Heart1.EmptyHeart();
+                p2Heart2.FullHeart();
+                p2Heart3.FullHeart();
+            }
+            if (player2.health == 1)
+            {
+                p2Heart1.EmptyHeart();
+                p2Heart2.EmptyHeart();
+                p2Heart3.FullHeart();
+            }
+            if (player2.health == 0)
+            {
+                p2Heart1.EmptyHeart();
+                p2Heart2.EmptyHeart();
+                p2Heart3.EmptyHeart();
+            }
+
             if (StartTimer == true)
             {
                 waitTime -= Time.deltaTime;
@@ -109,10 +169,12 @@ namespace Team36
             if (player1.health <= 0)
             {
                 //p2 wins
+                ReportGameCompletedEarly();
             }
             if (player2.health <= 0)
             {
                 //p1 wins
+                ReportGameCompletedEarly();
             }
         }
         public void roundreset()
