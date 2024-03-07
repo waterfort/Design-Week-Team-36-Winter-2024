@@ -17,10 +17,9 @@ namespace Team36
 
         private float waitTime = 1;
 
-        //public Animator animator;
+
+        public Animator animator;
        
-
-
 
         //6 is for success, 14 for fail
         public int buttonstate = 0;
@@ -33,15 +32,15 @@ namespace Team36
         void Start()
         {
             waitTime = 1;
-            
+
         }
 
         // Update is called once per frame
         void Update()
         {
-            if(outputManager.isGameOver == true)
+            if (outputManager.isGameOver == true)
             {
-                display = "None";
+                Invoke("screenwipe", 0.5f);
             }
             if (outputManager.isRoundOver == true)
             {
@@ -57,7 +56,7 @@ namespace Team36
             {
                 //Debug.Log(this + "failed");
                 buttonstate = 14;
-                
+
                 waitTime -= Time.deltaTime;
                 if (waitTime < 0)
                 {
@@ -76,14 +75,14 @@ namespace Team36
             {
                 buttonstate = 0;
             }
-            
-            if(outputManager.isRoundOver == false)
+
+            if (outputManager.isRoundOver == false && outputManager.isGameOver == false)
             {
                 display = outputManager.comboReq[inputRef];
             }
-            
 
-            if(display == "Up")
+
+            if (display == "Up")
             {
                 spriteLocation = 0 + buttonstate;
             }
@@ -119,10 +118,11 @@ namespace Team36
         }
         private void screenwipe()
         {
-            
-             display = "None";
-            
+
+            display = "None";
+
         }
+        
         
     }
 }
