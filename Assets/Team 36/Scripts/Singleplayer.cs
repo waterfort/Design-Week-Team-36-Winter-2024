@@ -19,6 +19,8 @@ namespace team36
 
         public float health;
 
+        public float combosCompleted;
+
         //private float waitTime;
 
 
@@ -138,6 +140,7 @@ namespace team36
             {
                 outputManager.StartTimer = true;
                 outputManager.PlayerWins();
+                combosCompleted++;
 
                 // waitTime = 1;
 
