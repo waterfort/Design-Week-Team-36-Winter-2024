@@ -21,6 +21,10 @@ namespace team36
 
         public float combosCompleted;
 
+        public GameObject scoretext;
+
+        public Animator animator;
+
         //private float waitTime;
 
 
@@ -31,6 +35,7 @@ namespace team36
             direction = Vector2.zero;
             //outputManager.ComboInitiator();
 
+            combosCompleted = 0;
             health = 2;
 
             //waitTime = 1;
@@ -122,6 +127,7 @@ namespace team36
                 //Debug.Log("good");
                 currentInput = "None";
                 inputplace++;
+                animator.SetTrigger("inputSuccess");
 
             }
             else if (currentInput != outputManager.comboReq[inputplace] && failed == false && outputManager.isRoundOver == false)
@@ -141,6 +147,7 @@ namespace team36
                 outputManager.StartTimer = true;
                 outputManager.PlayerWins();
                 combosCompleted++;
+                scoretext.SendMessage("ScoreIncrease");
 
                 // waitTime = 1;
 

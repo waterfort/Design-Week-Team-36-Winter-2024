@@ -23,6 +23,8 @@ namespace Team36
         public float waitTime = 1;
 
         public Singleplayer player;
+
+        public Animator animator;
         
 
         public bool isRoundOver = false;
@@ -74,8 +76,10 @@ namespace Team36
         }
         public void PlayerWins()
         {
-            
-                player.health--;
+           
+            animator.SetTrigger("punch");
+
+            player.health--;
                 isRoundOver = true;
 
                 //Debug.Log("Test");
