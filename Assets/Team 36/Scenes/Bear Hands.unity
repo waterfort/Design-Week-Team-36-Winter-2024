@@ -620,6 +620,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dae81fe1d267b254c87a3bac4645f5e4, type: 3}
+<<<<<<< HEAD
 --- !u!114 &431721002 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: -3036070223332931985, guid: dae81fe1d267b254c87a3bac4645f5e4, type: 3}
@@ -700,6 +701,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dae81fe1d267b254c87a3bac4645f5e4, type: 3}
+=======
+>>>>>>> af2003f9072786121f64399f3839b1591c4874f5
 --- !u!1001 &436993532
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1330,7 +1333,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 745415625, guid: 5f7e58a829ce98047aad768ad35ef34e, type: 3}
+  m_Sprite: {fileID: 309568595, guid: 332c82cd6d2922d4daee0aa62e65fdf2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2827,7 +2830,7 @@ Transform:
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
   m_LocalPosition: {x: 1.15, y: -0.53, z: -2.537}
   m_LocalScale: {x: 0.1854609, y: 0.1854609, z: 0.1854609}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 819166953}
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -2872,7 +2875,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 745415625, guid: 5f7e58a829ce98047aad768ad35ef34e, type: 3}
+  m_Sprite: {fileID: 309568595, guid: 332c82cd6d2922d4daee0aa62e65fdf2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3117,7 +3120,6 @@ SceneRoots:
   - {fileID: 1661939085}
   - {fileID: 453356675}
   - {fileID: 1360950163}
-  - {fileID: 433644200}
   - {fileID: 1604634198}
   - {fileID: 436993532}
   - {fileID: 1253355791}
