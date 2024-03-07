@@ -51,7 +51,7 @@ namespace Team36
                 waitTime -= Time.deltaTime;
                 if (waitTime < 0)
                 {
-                    Debug.Log("fail");
+                    //Debug.Log("fail");
                     buttonstate = 0;
                     player.failed = false;
                     waitTime = 1;

@@ -117,14 +117,14 @@ namespace team36
 
             if (currentInput == outputManager.comboReq[inputplace] && failed == false && outputManager.isRoundOver == false)
             {
-                Debug.Log("good");
+                //Debug.Log("good");
                 currentInput = "None";
                 inputplace++;
 
             }
             else if (currentInput != outputManager.comboReq[inputplace] && failed == false && outputManager.isRoundOver == false)
             {
-                Debug.Log("bad");
+                //Debug.Log("bad");
 
                 currentInput = "None";
 

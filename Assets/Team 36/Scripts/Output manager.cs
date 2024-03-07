@@ -84,7 +84,7 @@ namespace Team36
                 player2.health--;
                 isRoundOver = true;
 
-                Debug.Log("Test");
+                //Debug.Log("Test");
                 ComboInitiator();
                 Invoke("roundreset", 1);
 
@@ -94,7 +94,7 @@ namespace Team36
                 player1.health--;
                 isRoundOver = true;
 
-                Debug.Log("Test");
+                //Debug.Log("Test");
                 ComboInitiator();
                 Invoke("roundreset", 1);
             }
@@ -112,7 +112,7 @@ namespace Team36
         }
         public void roundreset()
         {
-            Debug.Log("reset");
+            //Debug.Log("reset");
             player2.inputplace = 0;
             player1.inputplace = 0;
 
