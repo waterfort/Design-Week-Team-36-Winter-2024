@@ -31,6 +31,7 @@ namespace Team36
 
         public bool isRoundOver = false;
         public bool StartTimer = false;
+        
 
         private Vector2 playerOutputDirection;
 
@@ -51,12 +52,13 @@ namespace Team36
             waitTime = 1;
             player1.health = 3;
             player2.health = 3;
+            
         }
 
         // Update is called once per frame
         void Update()
         {
-            gameEnd();
+            
             //updatehearts here
             if(player1.health == 3)
             {
@@ -81,6 +83,8 @@ namespace Team36
                 p1Heart1.EmptyHeart();
                 p1Heart2.EmptyHeart();
                 p1Heart3.EmptyHeart();
+                
+                gameEnd();
             }
             if (player2.health == 3)
             {
@@ -105,6 +109,8 @@ namespace Team36
                 p2Heart1.EmptyHeart();
                 p2Heart2.EmptyHeart();
                 p2Heart3.EmptyHeart();
+                
+                gameEnd();
             }
 
             if (StartTimer == true)
@@ -166,15 +172,24 @@ namespace Team36
         }
         public void gameEnd()
         {
+            
             if (player1.health <= 0)
             {
+                
                 //p2 wins
                 ReportGameCompletedEarly();
+                player1.health = 3;
+                
+                
             }
             if (player2.health <= 0)
             {
+               
                 //p1 wins
                 ReportGameCompletedEarly();
+                player2.health = 3;
+
+                
             }
         }
         public void roundreset()
