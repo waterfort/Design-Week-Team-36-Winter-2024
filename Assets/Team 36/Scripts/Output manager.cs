@@ -23,6 +23,7 @@ namespace Team36
 
         int lastInput;
         public int combolength = 4;
+        public float waitTime = 1;
 
         public Player player1;
         public Player player2;
@@ -35,6 +36,7 @@ namespace Team36
         {
             ComboInitiator();
             isRoundOver = false;
+            waitTime = 1;
         }
 
         // Update is called once per frame
@@ -70,14 +72,21 @@ namespace Team36
             if (winner.name == "Player 1 Controller")
             {
                 player2.health--;
+                waitTime -= Time.deltaTime;
                 roundreset();
                 ComboInitiator();
             }
             if (winner.name == "Player 2 Controller")
             {
                 player1.health--;
-                roundreset();
-                ComboInitiator();
+                isRoundOver = true;
+                //waitTime -= Time.deltaTime;
+               // if (waitTime < 0)
+               //{
+                    roundreset();
+                    ComboInitiator();
+                   // waitTime = 1;
+                //}
             }
         }
         public void gameEnd()
@@ -93,12 +102,9 @@ namespace Team36
         }
         public void roundreset()
         {
-            isRoundOver = true;
             player2.inputplace = 0;
             player1.inputplace = 0;
-
             isRoundOver = false;
-            
         }
     }
 }

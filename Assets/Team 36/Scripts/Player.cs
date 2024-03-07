@@ -74,6 +74,7 @@ namespace team36
             }
             if (currentInput == "None")
             {
+                
                 lastInput = direction;
             }
             
@@ -119,7 +120,9 @@ namespace team36
             else if (currentInput != outputManager.comboReq[inputplace] && failed == false)
             {
                 Debug.Log("bad");
-                currentInput = "None"; 
+                
+                currentInput = "None";
+                
 
                 //inputplace = 0;
                 failed = true;

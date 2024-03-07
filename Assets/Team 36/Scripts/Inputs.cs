@@ -17,6 +17,7 @@ namespace Team36
 
         private float waitTime = 1;
         
+        
 
         //6 is for success, 14 for fail
         public int buttonstate = 0;
@@ -37,22 +38,23 @@ namespace Team36
             if(outputManager.isRoundOver == true)
             {
                 //none of this works yet cause it gets skipped over if u ever set is round over back to false either here or in output manager.
-                print("hi");
-                waitTime = 1;
-                buttonstate = 0;
-                player.inputplace = 0;
-                
-                
+      
+                //print("hi");
+               // outputManager.waitTime = 1;
+               // buttonstate = 6;
+               // display = "None";
+
             }
 
             if (player.inputplace > inputRef)
             {
-                buttonstate = 6;
+                //Debug.Log("This line is being hit.");
+                buttonstate = 7;
             }
             if (player.inputplace == inputRef && player.failed == true)
             {
                 //Debug.Log(this + "failed");
-                buttonstate = 12;
+                buttonstate = 14;
                 
                 waitTime -= Time.deltaTime;
                 if (waitTime < 0)
@@ -62,7 +64,7 @@ namespace Team36
                     player.failed = false;
                     waitTime = 1;
                     player.inputplace = 0;
-
+                    player.clearInput();
                 }
 
 
@@ -73,8 +75,11 @@ namespace Team36
                 buttonstate = 0;
             }
             
-
-            display = outputManager.comboReq[inputRef];
+            //if(outputManager.isRoundOver == false)
+           // {
+                display = outputManager.comboReq[inputRef];
+           // }
+            
 
             if(display == "Up")
             {
@@ -105,8 +110,8 @@ namespace Team36
                 spriteLocation = 6 + buttonstate;
             }
 
-            
 
+            //Debug.Log(spriteLocation.ToString());
             spriteRenderer.sprite = sprites[spriteLocation];
 
         }
