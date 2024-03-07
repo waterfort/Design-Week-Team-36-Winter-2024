@@ -24,6 +24,7 @@ namespace Team36
 
         public SingleplayerManager outputManager;
         public Singleplayer player;
+        
 
         // Start is called before the first frame update
         void Start()

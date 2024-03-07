@@ -30,6 +30,8 @@ namespace Team36
         public bool isRoundOver = false;
         public bool StartTimer = false;
 
+        public PunchingBagAnimation bag;
+
         private Vector2 playerOutputDirection;
         // Start is called before the first frame update
         void Start()
@@ -100,7 +102,8 @@ namespace Team36
         {
             //Debug.Log("reset");
             player.inputplace = 0;
-            
+
+            bag.getHit();
 
             isRoundOver = false;
         }
