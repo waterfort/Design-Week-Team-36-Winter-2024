@@ -31,7 +31,11 @@ namespace Team36
 
         public bool isRoundOver = false;
         public bool StartTimer = false;
-        
+
+        public bool isGameOver = false;
+
+
+
 
         private Vector2 playerOutputDirection;
 
@@ -60,6 +64,7 @@ namespace Team36
             player1.health = 3;
             player2.health = 3;
 
+            isGameOver = false;
 
             goHeartp1a.SetActive(true);
             goHeartp1b.SetActive(true);
@@ -108,6 +113,8 @@ namespace Team36
                 goHeartp1b.SetActive(false);
                 goHeartp1c.SetActive(false);
 
+                isGameOver = true;
+
                 gameEnd();
             }
             if (player2.health == 3)
@@ -141,6 +148,8 @@ namespace Team36
                 goHeartp2a.SetActive(false);
                 goHeartp2b.SetActive(false);
                 goHeartp2c.SetActive(false);
+
+                isGameOver = true;
 
                 gameEnd();
             }
@@ -183,6 +192,7 @@ namespace Team36
             if (winner.name == "Player 1 Controller")
             {
                 animatorP2.SetTrigger("wasPunched");
+                animatorP1.SetTrigger("punch");
                 player2.health--;
                 isRoundOver = true;
 
@@ -194,6 +204,7 @@ namespace Team36
             if (winner.name == "Player 2 Controller")
             {
                 animatorP1.SetTrigger("wasPunched");
+                animatorP2.SetTrigger("punch");
                 player1.health--;
                 isRoundOver = true;
 

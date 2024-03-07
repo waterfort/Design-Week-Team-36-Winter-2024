@@ -17,7 +17,7 @@ namespace Team36
 
         private float waitTime = 1;
 
-        public bool isGameOver = false;
+        
         
         
 
@@ -32,13 +32,13 @@ namespace Team36
         void Start()
         {
             waitTime = 1;
-            isGameOver = false;
+            
         }
 
         // Update is called once per frame
         void Update()
         {
-            if(isGameOver == true)
+            if(outputManager.isGameOver == true)
             {
                 display = "None";
             }
