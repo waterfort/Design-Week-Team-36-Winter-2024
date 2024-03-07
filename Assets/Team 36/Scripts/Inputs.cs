@@ -35,8 +35,10 @@ namespace Team36
         // Update is called once per frame
         void Update()
         {
-            
-
+            if (outputManager.isRoundOver == true)
+            {
+                Invoke("screenwipe", 0.5f);
+            }
             if (player.inputplace > inputRef)
             {
                 //Debug.Log("This line is being hit.");
@@ -105,6 +107,12 @@ namespace Team36
             //Debug.Log(spriteLocation.ToString());
             spriteRenderer.sprite = sprites[spriteLocation];
 
+        }
+        private void screenwipe()
+        {
+            
+             display = "None";
+            
         }
         
     }

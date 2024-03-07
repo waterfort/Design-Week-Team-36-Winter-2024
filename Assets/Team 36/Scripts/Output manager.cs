@@ -115,6 +115,7 @@ namespace Team36
             Debug.Log("reset");
             player2.inputplace = 0;
             player1.inputplace = 0;
+
             isRoundOver = false;
         }
     }
