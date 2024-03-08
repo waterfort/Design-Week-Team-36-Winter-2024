@@ -41,7 +41,7 @@ namespace Team36
 
         public Animator animatorP1;
         public Animator animatorP2;
-        public Animator m_animator;
+        public Animator m_animatorM;
 
         public Heartmanager p1Heart1;
         public Heartmanager p1Heart2;
@@ -184,28 +184,29 @@ namespace Team36
         }
         public void PlayerWins(team36.Player winner)
         {
-            print(winner.name);
+            
             if (winner.name == "Player 1 Controller")
             {
-                animatorP2.SetTrigger("wasPunched");
+                animatorP2.SetTrigger("punched");
                 animatorP1.SetTrigger("punch");
-                m_animator.SetTrigger("masterSuccess");
+                m_animatorM.SetTrigger("masterSuccess");
                 player2.health--;
                 isRoundOver = true;
 
-                //Debug.Log("Test");
+                
                 ComboInitiator();
                 Invoke("roundreset", 1);
 
             }
             if (winner.name == "Player 2 Controller")
             {
+                m_animatorM.SetTrigger("masterSuccess");
                 animatorP1.SetTrigger("wasPunched");
                 animatorP2.SetTrigger("punch");
                 player1.health--;
                 isRoundOver = true;
 
-                //Debug.Log("Test");
+              
                 ComboInitiator();
                 Invoke("roundreset", 1);
             }
@@ -252,6 +253,7 @@ namespace Team36
             player1.inputplace = 0;
 
             isRoundOver = false;
+            m_animatorM.SetTrigger("masterSpeak");
         }
     }
 }

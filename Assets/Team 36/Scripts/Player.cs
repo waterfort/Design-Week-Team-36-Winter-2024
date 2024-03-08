@@ -130,16 +130,16 @@ namespace team36
            
             if (currentInput == outputManager.comboReq[inputplace] && failed == false && outputManager.isRoundOver == false)
             {
-                Debug.Log("good");
+                
                 currentInput = "None";
 
                 inputplace ++;
-                animator.SetTrigger("inputSuccess");
+               
 
             }
             else if (currentInput != outputManager.comboReq[inputplace] && failed == false && outputManager.isRoundOver == false)
             {
-                Debug.Log("bad");
+                
                 
                 currentInput = "None";
                 
