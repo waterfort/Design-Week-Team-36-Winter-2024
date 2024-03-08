@@ -4,9 +4,7 @@ using System.Collections.Generic;
 using System.Threading;
 using team36;
 using Unity.VisualScripting;
-using UnityEditor.ShortcutManagement;
 using UnityEngine;
-using static UnityEditor.Rendering.CameraUI;
 
 namespace Team36
 {
