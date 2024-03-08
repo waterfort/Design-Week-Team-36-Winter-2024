@@ -35,7 +35,7 @@ MonoBehaviour:
   twoPlayerScenePath: Assets/Team 36/Scenes/Bear Hands.unity
   postgameMessages:
   - How do bears catch fish? They use their bear hands!
-  bannerImage: {fileID: 0}
+  bannerImage: {fileID: 21300000, guid: e27360e3bf0bea2479016881a01628c4, type: 3}
   developerCredits:
   - Jack McLoughlin
   - Eric Hackney

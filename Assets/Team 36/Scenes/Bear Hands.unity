@@ -468,9 +468,9 @@ AudioSource:
   m_GameObject: {fileID: 371916971}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 34ccda6d6c6fc5948a4b6ade2a834672, type: 2}
   m_audioClip: {fileID: 8300000, guid: f04397c5dcc6408428829ad40df76681, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -2232,7 +2232,7 @@ AudioSource:
   m_GameObject: {fileID: 1544331265}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 34ccda6d6c6fc5948a4b6ade2a834672, type: 2}
   m_audioClip: {fileID: 8300000, guid: a7585d374596d0d439fa87875018f9c9, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -2373,6 +2373,10 @@ MonoBehaviour:
   goHeartp2a: {fileID: 391427048}
   goHeartp2b: {fileID: 1337928078}
   goHeartp2c: {fileID: 378805627}
+  punchEffect: {fileID: 1544331267}
+  victoryMusic: {fileID: 0}
+  bgm: {fileID: 0}
+  growl: {fileID: 0}
 --- !u!4 &1576783767
 Transform:
   m_ObjectHideFlags: 0

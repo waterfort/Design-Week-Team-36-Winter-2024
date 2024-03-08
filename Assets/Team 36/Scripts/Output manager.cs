@@ -56,6 +56,12 @@ namespace Team36
         public GameObject goHeartp2a;
         public GameObject goHeartp2b;
         public GameObject goHeartp2c;
+
+        public AudioSource punchEffect;
+        public AudioSource victoryMusic;
+        public AudioSource bgm;
+        public AudioSource growl;
+
         // Start is called before the first frame update
         void Start()
         {
@@ -189,6 +195,7 @@ namespace Team36
             {
                 animatorP2.SetTrigger("punched");
                 animatorP1.SetTrigger("punch");
+                punchEffect.Play();
                 m_animatorM.SetTrigger("masterSuccess");
                 player2.health--;
                 isRoundOver = true;
@@ -203,6 +210,7 @@ namespace Team36
                 m_animatorM.SetTrigger("masterSuccess");
                 animatorP1.SetTrigger("wasPunched");
                 animatorP2.SetTrigger("punch");
+                punchEffect.Play();
                 player1.health--;
                 isRoundOver = true;
 
