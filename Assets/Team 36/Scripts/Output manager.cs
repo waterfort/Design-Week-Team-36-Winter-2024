@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Threading;
 using team36;
 using Unity.VisualScripting;
+using UnityEditor.ShortcutManagement;
 using UnityEngine;
 using static UnityEditor.Rendering.CameraUI;
 
@@ -65,6 +66,7 @@ namespace Team36
         // Start is called before the first frame update
         void Start()
         {
+            bgm.Play();
             ComboInitiator();
             isRoundOver = false;
             waitTime = 1;
@@ -238,7 +240,8 @@ namespace Team36
                 animatorP2.SetTrigger("winner");
                 ReportGameCompletedEarly();
                 player1.health = 3;
-
+                bgm.Stop();
+                victoryMusic.Play();
                 
                 
             }
@@ -250,8 +253,9 @@ namespace Team36
                 animatorP2.SetTrigger("loser");
                 ReportGameCompletedEarly();
                 player2.health = 3;
+                victoryMusic.Play();
+                bgm.Stop();
 
-                
             }
         }
         public void roundreset()
@@ -262,6 +266,7 @@ namespace Team36
 
             isRoundOver = false;
             m_animatorM.SetTrigger("masterSpeak");
+            growl.Play();
         }
     }
 }
